@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자식 선택자, 부모 요소의 자식 요소에 스타일 적용*/
+        .box > p {
+            color: rgb(177, 115, 115);
+        }/* > 가 있고 없고 차이로 자식에서 받아들이는 범위가 다름.*/
+        .box > div > p {
+            color: rgb(16, 116, 209);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>바로 쓰는 p태그 공간엔</p>
+        <div>
+            <p>넌 안돼</p>
+            <span> 얘는 또 달라</span>
+        </div>
+        <p>.box > p 로 접근이 되지만</p>
+    </div>
+    
+</body>
+</html>

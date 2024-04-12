@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ /*전체 선택자*/
+            color: blue;
+            background-color: skyblue;
+        }
+        div{ /*태그 선택자*/
+            width: 200px;
+            color: black;
+            background-color: mintcream;
+        }
+        .accent{ /*class 선택자*/
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: red;
+            border: 5px dotted black;
+        }
+        .bg{
+            background-color: mintcream;
+        }
+        /* 아이디 선택자, 문서에서 한번만 적용 가능, 리액트에선 사용 불가 */
+        #container{
+            width: 500px;
+            height: 60vh;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: blanchedalmond;
+
+        }
+        /* 기본 속성 선택자 , 속성과 값을 사용해 선택자를 지정*/
+        a[href]{
+            color: green;
+        }
+        #container a[target="_blank"]{
+            color: red;
+        }
+        /* 그룹 선택자, 여러 선택자를 하나로 그룹지음, ','사용 */
+        p , div{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>금요일 ! </p>
+        <div>곰도리</div>
+        <!-- 이게 뭐여? -->
+        <p class="accent">강조 중의 <span class="bg">강조</span></p>
+        <a href="https://www.naver.com" target="_blank">Naver</a>
+        <a href="https://www.google.co.kr" >구글</a>
+    </div>
+    <a href="https://www.kakao.com" target="_blank">캐캐오</a>
+    
+</body>
+</html>
