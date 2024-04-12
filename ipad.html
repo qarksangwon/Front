@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 600px;
+            
+        }
+        legend{
+            font-weight: bold;
+        }
+        label{
+            width: 80px;
+            display: inline-block;
+            margin: 4px 10px;
+            font-weight: bold;
+        }
+        input{
+            width: 300px;
+            display: inline-block;
+        }
+        input[type="date"]{
+            width: 120px;
+            font-size: small;
+        }
+        p{
+            display: inline-block;
+            font-size: small;
+            font-weight: bold;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            margin: 10px 10px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .h1{
+            margin: 10px 400px 0px 0px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1">
+    <h1>아이패드 주문하기</h1>
+    </div>
+    <div class="container">
+        <form action="#">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <div class="info">
+            <label for="product">주문 상품</label>
+            <input type="text" id="product" value="아이패드 12.9인치"> 
+            </div>
+            <div class="info">
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </div>
+            <div class="info">
+                <label for="addr">배송 주소</label>
+                <input type="text" id="addr">
+            </div>
+            <div class="info">
+                <label for="email">이메일</label>
+                <input type="text" id="email">
+            </div>
+            <div class="info">
+                <label for="ph">연락처</label>
+                <input type="text" id="ph" placeholder="하이픈 빼고 입력해 주세요.(01012345678)">
+            </div>
+            <div class="info">
+                <label for="date">배송 지정</label>
+                <input type="date" id="date">
+                <p>(주문일로부터 최소 3일 이후)</p>
+            </div>
+        </fieldset>
+    </div>
+        <div class="btn">
+        <button type="submit">주문하기</button>
+        <button type="res">취소하기</button>
+        </div>
+    </form>
+    
+</body>
+</html>
