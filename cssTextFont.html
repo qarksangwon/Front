@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    font-weight 굵기
+    100~900 
+    normal = 400
+    bold = 700
+    lighter = 부모보다 얇게 상대값
+    bolder = 부모보다 굵게 상대값 
+    
+    font-style 글꼴 스타일
+    normal = 기본 형태
+    italic = 이탤릭체
+    oblique = 기울임꼴
+    이탤릭과 기울임꼴은 둘다 기울인건데 이탤릭은 기울인 폰트인거고
+    oblique는 글자를 기울인거
+
+
+    font-variant 영문 텍스트 작은 대문자로 변경
+    normal = 변환 x
+    small-caps = 소문자들을 크기가 작은 대문자로
+
+    text-align 정렬
+    left = 왼쪽
+    center = 가운데
+    right = 오른쪽
+    justify = 양쪽
+
+    text-decoration 꾸미기
+    none = 장식 지움
+    line-through = 텍스트 중앙 선긋기
+    overline = 텍스트 위 선긋기
+    underline = 텍스트 아래 선긋기
+
+    letter-spacing 자간 조절(글자간 사이 간격)
+    normal = 기본
+    크기(px) = 크기만큼
+
+    line-height 한 줄 높이 지정
+    normal = 기본 값 줄 간격
+    크기(px) = 크기만큼 배수로 줄 간격
+    단위포함 = (em,rem,%) 등 단위 포함 줄 간격 설정
+
+    text-shadow 텍스트 그림자 효과
+    none = 기본
+    가로px 세로px 번짐정도px 색상#ffffff 
+    
+    */
+
+    .variant{
+        font-style: italic;
+        font-variant: small-caps;
+    }
+
+    a{
+        font-style: oblique;
+        text-decoration: line-through;
+    }
+</style>
+<body>
+    <p class="variant">Lorem ipsum dolor sit.</p>
+    <a href="#">링크</a>
+</body>
+</html>
