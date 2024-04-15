@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 구조적 가상 클래스 선택자 
+        - :first-child 는 부모 요소의 첫 번째 자식 요소에 스타일을 적용합니다.
+        - :last-child 는 부모 요소의 마지막 자식 요소에 스타일을 적용합니다.
+        
+        - :nth-child(n) 은 부모 요소의 n번째 자식 요소에 스타일을 적용합니다.
+        - :nth-last-child(n) 은 부모 요소의 뒤에서부터 n번째 자식 요소에 스타일을 적용합니다.
+       
+        - :only-child 는 부모 요소의 유일한 자식 요소에 스타일을 적용합니다.
+        
+        - :first-of-type 은 동일한 태그명을 가진 형제 요소 중에서 첫 번째 요소에 스타일을 적용합니다.
+        - :last-of-type 은 동일한 태그명을 가진 형제 요소 중에서 마지막 요소에 스타일을 적용합니다.
+        
+        - :nth-of-type(n) 은 동일한 태그명을 가진 형제 요소 중에서 n번째 요소에 스타일을 적용합니다.
+        - :nth-last-of-type(n) 은 동일한 태그명을 가진 형제 요소 중에서 뒤에서부터 n번째 요소에 스타일을 적용합니다.
+        
+        - :only-of-type 는 동일한 태그명을 가진 형제 요소가 유일한 경우에 스타일을 적용합니다.
+        
+        - :root 는 문서의 루트 요소에 스타일을 적용합니다.    */
+        li:first-child{
+            color:red;
+        }
+        li:last-child{
+            color:orange;
+        }
+
+        p:nth-child(1){ /*자식의 1번 째 */
+            color:red;
+        }
+        p:nth-of-type(2){  /*부모 에서도 2번째, 자식 에서도 2번째에 오는 모든 P태그 */
+            color:blue;
+        }
+        p:last-of-type{ /* 부모 자식 중 first or last 요소 선택 */
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+		<li>test 1</li>
+		<li>test 2</li>
+		<li>test 3</li>
+		<li>test 4</li>
+	</ul>    
+    <p>lorem 1-1</p>
+    <p>lorem 1-2</p>
+    <p>lorem 1-3</p>
+    <div>
+        <p>lorem 2-1</p> 
+        <p>lorem 2-2</p>
+        <p>lorem 2-3</p>
+    </div>
+    <div>
+        <p>lorem 3-1</p> 
+        <p>lorem 3-2</p>
+        <p>lorem 3-3</p>
+    </div>
+    
+</body>
+</html>
