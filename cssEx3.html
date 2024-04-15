@@ -12,6 +12,21 @@
         .box > div > p {
             color: rgb(16, 116, 209);
         }
+        /* 인접 형제 선택자 : + 기호로 특정 태그 옆의 태그에만 선택 */
+        h1 + h2{
+            color: red;
+        }
+        /* 일반 형제 선택자 : ~ 기호로 특정 기호 이후에 오는 모두 선택자로 지정,  */
+        h4~h5{
+            color: blue;
+        }
+        /* 가상 요소 선택자 : 콜론(:), 요소의 내용이 아닌 특정 부분에 스타일 적용 */
+        /* ::before은 요소를 맨앞에 추가해서 스타일 적용 */
+        /* ::after는  요소를 맨뒤에 추가해서 스타일 적용*/
+        h1::before {
+			content: "★";
+			color: red;
+		}
     </style>
 </head>
 <body>
@@ -23,6 +38,13 @@
         </div>
         <p>.box > p 로 접근이 되지만</p>
     </div>
-    
+    <h1>Test1</h1>
+    <h2>Test2</h2>
+    <h3>Test3</h3>
+    <h2>Test2</h2>
+    <h4>Test4</h4>
+    <h5>Test5</h5>
+    <h6>Test6</h6>
+    <h5>Test5</h5>
 </body>
 </html>

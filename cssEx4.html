@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상 클래스 선택자
+        :link -> 한번도 방문하지 않은 링크
+        :visited -> 한번이라도 방문한 링크 */
+        a:link {
+            color:orange;
+        }
+        a:visited {
+            color:green;
+        }
+      /* 동적 가상 클래스 선택자
+      :hover -> 마우스를 올리면 해당 태그 선택자 지정
+      :action -> 마우스로 클릭하고 있는 동안 태그가 선택자 지정 */
+        button{
+            width: 50px;
+            height: 50px;
+            transition: width 1s ease-in-out, height 1s ease-in-out, background-color 1s ease-in-out;
+        }
+        button:hover{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: width 1s ease-in, height 1s ease-in, background-color 1s ease-in;
+        }
+
+        button:active{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transition: width 1s ease-in, height 1s ease-in, background-color 1s ease-in;
+        }
+
+
+      /* 입력 요소 가상 클래스 선택자 
+      :focus -> 커서 활성화 시 지정
+      :checked -> 체크박스 표시돼 있으면 지정
+      :disabled -> 상호작용 요소가 비활성화 되면 지정 ( disabled 일 때 )
+      :enabled -> 상호작용 요소가 활성화 되면 지정 ( disabled 아닐 때 )*/
+        input:focus {
+            color:orange;
+        }
+        input:checked + label {
+		color:red;
+	    }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com">Naver</a>
+    <a href="https://www.kakao.com">KaKao</a>
+    <a href="https://www.google.com">Google</a>
+    <button>active</button>
+    <input type="checkbox" id="userid">
+    <label for="userid">입력 <input type="text"></label>
+</body>
+</html>
