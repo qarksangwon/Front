@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClonePage</title>
+    <style>
+        @import url('https://static.toss.im/tps/main.css');
+        @import url('https://static.toss.im/tps/others.css');
+
+        * {
+        font-family: 'Toss Product Sans';
+        }
+        .container{
+            margin: 4px 8px;
+        }
+        .tossimg{
+            width: 24px;
+            height: 24px;
+            align-items: center;
+            
+        }
+        .navbar_logo > a{
+            width: 70px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .navbar_logo > button{
+            width: 90px;
+            height: 40px;
+            background-color: white;
+            color: white;
+            border: 0px;
+        }
+        .navbar_logo > button:hover{
+            background-color: rgb(243, 241, 241);
+        }
+        .navbar_logo > button > a{
+            align-items: center;
+            text-decoration: none;
+            color: gray;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar_logo">
+                    <a href="#">
+                        <img src="images/toss.png" class="tossimg">
+                        <p>&nbsp;toss</p>
+                    </a>
+                    <button>
+                        <a href="#">회사 소개</a>
+                    </button>
+                    <button>
+                        <a href="#">고객 센터</a>
+                    </button>
+                    <button>
+                        <a href="#">자주 묻는 질문</a>
+                    </button>
+                    <button>
+                        <a href="#">토스인증서</a>
+                    </button>
+                    <button>
+                        <a href="#">채용</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
