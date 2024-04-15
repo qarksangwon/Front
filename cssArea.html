@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        boxmodel
+        margin : 요소의 외부 여백
+        border : 요소의 테두리
+        padding : 요소의 내부 여백
+        content : 요소의 내용 
+ 
+        margin
+        👉 입력 갯수에 따른 규칙
+        - 4개를 적으면 순서대로 margin-top, margin-right, margin-bottom, margin-left
+        - 3개를 적으면 margin-top, margin-right, margin-bottom의 값이고 
+            생략된 margin-left는 마주 보는 margin-right와 같은 값으로 적용
+        - 2개 적으면 top, bottom 그리고 left, right가 묶임
+        - 1개 적으면 모든 방향 적용
+
+        border -> 마진과 동일하게 적용
+        border : border-width border-style color;
+        border-width : 3px; 굵기 따로 지정
+        border-style : 모양 지정
+        none : 테두리 x
+        hidden : 감추기
+        solid : 실선
+        double : 이중 실선
+        dotted : 점선
+        dashed : dotted보다 긴 점선
+        groove : 테두리 파임
+        ridge : 테두리 튀어 나옴
+        inset : 요소가 파인 것 처럼
+        outset : 요소가 튀어나온 것 처럼
+
+        border-radius : 테두리를 둥글게, px와 %단위
+        border-radius: 크기or백분율
+        border-radius : 20px
+
+        padding : margin,border영역의 안쪽
+
+        content : 시작 태그와 종료 태그 사이 콘텐츠가 속하는 영역
+        
+        box-shadow : 그림자
+        none
+        수평거리 수직거리 흐림정도 번짐정도 색상
+        inset
+
+        boxmodel 에서의 성격과 display
+        블록 -> 가로 한줄
+        인라인 -> 요소의 크기만큼
+
+        블록이나 인라인블록은 width, height, margin, padding 모두 적용
+        인라인은 width와 height 적용 x , margin, padding은 왼쪽 오른쪽만 적용
+
+        display 속성으로 박스 모델의 성격을 변경할 수 있음
+        block, inline, inline-block으로.
+        block 성격 태그를 inline으로 바꾸려면 display의 속성을 inline 지정
+
+        */
+        p{
+            border:10px inset rgb(142, 103, 248);
+            border-radius: 10px;
+            padding : 10px;
+            width:300px;
+            height: 100px;
+            box-shadow:2px -2px 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        우리는 수많은 실수를 합니다. 그것이 바로 인생이죠. 하지만 최소한 그것들은
+        새로워지고 창조적이게 됩니다.
+    </p>
+    
+</body>
+</html>

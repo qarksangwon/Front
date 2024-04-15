@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open textPractice.html",
-            "file": "d:\\Dev\\htmlcssjs\\Front\\textPractice.html"
+            "file": "${fileBasenameNoExtension}.html"
         }
     ]
 }
