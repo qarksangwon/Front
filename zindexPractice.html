@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 200px;
+            background-color: royalblue;
+        }
+        .box{
+            width: 92px;
+            height: 92px;
+            border: 4px dashed red;
+            background-color: orange;
+            font-weight: bold;
+        }
+        .one{
+            position: relative;
+        }
+        .two{
+            position: relative;
+            top : -50px;
+            left: 50px;
+            z-index: 1;
+        }
+        .three{
+            position: relative;
+            top: -100px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+    </div>
+</body>
+</html>
