@@ -1,0 +1,66 @@
+.tossimg{
+    padding: 28px 0px 0px 20px;
+    width: 114px;
+    height: 56px;
+    align-items: center;
+    
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar_container{
+    margin : 0px 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo_container > a{
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+.category{
+    margin-right: 30px;
+}
+.category > ul{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 8px;
+    height: 20px;
+    border: 0px;
+}
+.category > ul > li{
+    padding: 2px 8px;
+}
+.category > ul > li > a{
+    padding: 14px 10px;
+    color: rgb(102, 102, 102);
+    align-items: center;
+    text-decoration: none;
+    border-radius: 7px;
+    white-space: nowrap;
+}
+.category > ul > li:nth-of-type(6) > a{
+    margin-left: 42px;
+}
+.category > ul > li > a:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+@media (min-width:1160px) {
+    .navbar_container{
+        margin-left: calc((100vw - 1160px)/2);
+        margin-right: calc((100vw - 1160px)/2);
+    }
+}
