@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 
+        position을 지정하지 않으면 기본 default 값은 
+        position : static이다.
+        static은 고정값이라 아무리 변경하려 해도 위치가 변경되지 않음.
+        즉 흐름에 따라 알아서 지정한 위치 고정되는것.
+        따라서 위치를 변경하고 싶으면
+        relative, absolute, fixed, sticky 중에 화면에 배치해야 하는것
+        relative는 원래 static 위치에서 지정 위치로 .
+        absolute는 부모 요소를 기준으로 절대 위치에 고정.
+        fixed는 뷰포트(현재 보고있는 화면)에서 고정 위치. 스크롤돼도 같은 위치
+        sticky는 fixed와 비슷한데 첫 배치는 static처럼 되는데
+        스크롤 내릴 때 지정 위치에 박힘
+     -->
     <style>
         .container{
             width: 300px;
