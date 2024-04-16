@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            transition
+            property : 대상 지정 (대부분 all 줌)
+            개별 지정도 가능
+            transition-property:background-color, color, width;
+
+            duration : 시간 지정
+
+            timing-function : 실행 형태
+            linear : 일정 속도로 
+            ease : 점점 빨라지다 중간부터 느려짐
+            ease-in : 완료될 때 까지 빨라짐
+            ease-out : 빠른 속도로 시작 후 점점 느려짐
+            ease-in-out : 느리다가 빨라졌다 다시느려짐
+            cubic-bezier(p1,p2,p3,p4): 사용자가 정의한 속도로 진행
+
+            delay : 지연 시간 지정
+            transition : 속성 한번에 지정0
+        */
+        .box{
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #fb5;
+            border: 1px solid #222;
+            transition: all 1.5s ease-in;   
+        }
+        .box:hover{
+            width: 200px;
+            height: 200px;
+            background-color: #f50;
+            transition: all 0.5s ease-in;
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

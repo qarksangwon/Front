@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            padding: 0;
+            margin: 0;
+        }
+        .product{
+            margin: 0;
+            width: 300px;
+            height: 200px;
+            position:relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .product img{
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+        }
+        .product>p{
+            margin: 0;
+            padding: 50px 0px 0px 0px;
+            width: 300px;
+            height: 150px;
+            position: relative;
+            top:-200px;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+        }
+        .product>p>span{
+            font-size: large;
+            font-weight: bold;
+        }
+        .product>p:hover{
+            color: white;
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease-in-out;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>신상품 목록</h1>
+    <div class="container">
+        <div class="product">
+            <img src="images/prod1.jpg">
+            <p>
+                <span>상품 1</span>
+                <br>
+                <br>
+                상품 1 설명 텍스트
+                <br>
+                <br>
+                가격 : 12,345 원
+            </p>
+        </div>
+        <div class="product">
+            <img src="images/prod2.jpg">
+            <p>
+                <span>상품 2</span>
+                <br>
+                <br>
+                상품 2 설명 텍스트
+                <br>
+                <br>
+                가격 : 12,345 원
+            </p>
+        </div>
+        <div class="product">
+            <img src="images/prod3.jpg">
+            <p>
+                <span>상품 3</span>
+                <br>
+                <br>
+                상품 3 설명 텍스트
+                <br>
+                <br>
+                가격 : 12,345 원
+            </p>
+        </div>
+    </div>
+</body>
+</html>
