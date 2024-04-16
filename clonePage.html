@@ -8,45 +8,70 @@
         @import url('https://static.toss.im/tps/main.css');
         @import url('https://static.toss.im/tps/others.css');
 
+        body{
+            margin: 0;
+            height: 3000px;
+        }
         * {
         font-family: 'Toss Product Sans';
         }
-        .container{
-            margin: 4px 8px;
-        }
         .tossimg{
-            width: 24px;
-            height: 24px;
+            padding: 40px 0px 0px 0px;
+            width: 114px;
+            height: 60px;
             align-items: center;
             
         }
-        .navbar_logo{
-            display: flex;
+        .navbar{
+            width: 100%;
+            position: fixed;
         }
-        .navbar_logo > a{
-            width: 70px;
-            height: 24px;
+
+        .navbar_container{
+            margin : 0px 16px;
             display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .logo_container > a{
+            height: 24px;
+            display: inline-flex;
             align-items: center;
             text-decoration: none;
             color: black;
             font-weight: 800;
             font-size: 20px;
         }
-        .navbar_logo > button{
-            width: 90px;
-            height: 40px;
-            background-color: white;
-            color: white;
+        .category > ul{
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            list-style-type: none;
+            padding: 0px 8px;
+            height: 20px;
             border: 0px;
         }
-        .navbar_logo > button:hover{
-            background-color: rgb(243, 241, 241);
+        .category > ul > li{
+            padding: 2px 8px;
         }
-        .navbar_logo > button > a{
+        .category > ul > li > a{
+            padding: 10px;
+            color: rgb(102, 102, 102);
             align-items: center;
             text-decoration: none;
-            color: gray;
+        }
+        .category > ul > li > a:hover{
+            background-color: rgb(247, 246, 246);
+        }
+        @media (min-width: 782px) {
+            .navbar {
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+            }
         }
 
     </style>
@@ -54,27 +79,37 @@
 <body>
     <div class="container">
         <nav class="navbar">
-            <div class="container">
-                <div class="navbar_logo">
+            <div class="navbar_container">
+                <div class="logo_container">
                     <a href="#">
-                        <img src="images/toss.png" class="tossimg">
-                        <p>&nbsp;toss</p>
+                        <img src="images/Toss_Logo.png" class="tossimg">
                     </a>
-                    <button>
-                        <a href="#">회사 소개</a>
-                    </button>
-                    <button>
-                        <a href="#">고객 센터</a>
-                    </button>
-                    <button>
-                        <a href="#">자주 묻는 질문</a>
-                    </button>
-                    <button>
-                        <a href="#">토스인증서</a>
-                    </button>
-                    <button>
-                        <a href="#">채용</a>
-                    </button>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li>
+                            <a href="#">회사 소개</a>
+                        </li>
+                        <li>
+                            <a href="#">고객 센터</a>
+                        </li>
+                        <li>
+                            <a href="#">자주 묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">토스인증서</a>
+                        </li>
+                        <li>
+                            <a href="#">채용</a>
+                        </li>
+                        <li>
+                            <a href="#">KOR</a>
+                        </li>
+                        <span style="color : lightgray" > | </span>
+                        <li>
+                            <a href="#" style="color: lightgray;" >ENG</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -85,5 +120,17 @@
 
         </footer>
     </div>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+    
+        if (window.scrollY === 0) {
+            navbar.style.borderBottom = 'none'; 
+        } else {
+            navbar.style.borderBottom = '1px solid rgb(230, 228, 228)';  
+        }
+    });
+</script>
 </body>
 </html>
