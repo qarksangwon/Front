@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(./images/bg5.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        button {
+            background-color: #ccc;
+            font-size: 1.2em;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px #fff;
+        }
+        .container{
+            display: flex;
+            background-color: royalblue;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            border: 3px dashed red;
+            margin: 10px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        
+        .container .item:nth-child(3) {
+            flex-grow: 1;
+            background-color: red;
+            border: 3px dashed black;
+        }
+
+        .container .item:nth-child(4) {
+            flex-grow: 1;
+        }
+        .container .item:nth-child(5) {
+            flex-grow: 4;
+        }
+        .container .item:nth-child(6) {
+            flex-grow: 12;
+        }
+        
+    </style>
+</head>
+<body>
+    <button>클릭</button>
+    
+</body>
+</html>
