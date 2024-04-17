@@ -9,3 +9,15 @@ window.addEventListener('scroll', function() {
         navbar.style.backgroundColor = 'white';  
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const downBtn = document.querySelector('.downbtn');
+
+    downBtn.addEventListener('click', function() {
+        window.scrollBy({
+            top: window.innerHeight, 
+            behavior: 'smooth' 
+        });
+    });
+});

@@ -24,9 +24,6 @@
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: black;
-    font-weight: 800;
-    font-size: 20px;
 }
 .category{
     margin-right: 30px;
