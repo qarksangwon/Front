@@ -13,10 +13,14 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const downBtn = document.querySelector('.downbtn');
+    const tossInfo = document.querySelector('.toss-info');
 
     downBtn.addEventListener('click', function() {
-        window.scrollBy({
-            top: window.innerHeight, 
+        const currentScrollY = window.scrollY; 
+        const tossInfoTop = tossInfo.getBoundingClientRect().top; 
+
+        window.scrollTo({
+            top: tossInfoTop + currentScrollY, 
             behavior: 'smooth' 
         });
     });
