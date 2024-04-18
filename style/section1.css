@@ -70,10 +70,15 @@
     background-color: rgb(90, 90, 99);
     transition: all .1s ease-in;
 }
-.downbtn{
+.main-checkbtn{
     position: relative;
+}
+.downbtn{
+    position: absolute;
     height: 76px;
-    top: 160px;
+    top: calc(100vh - 76px);
+    left: 50%; 
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
@@ -83,8 +88,9 @@
 .downbtn > img{
     width: 60px;
     height: 40px;
-    opacity: 0.4;
-    animation: moveUpDown 4s infinite;
+    opacity: 0;
+    animation:fadeIn 1s forwards, moveUpDown 4s infinite;
+    animation-delay: 1s;
 }
 @keyframes fadeIn {
     from {
