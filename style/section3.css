@@ -98,12 +98,10 @@
 .section3-1-h1,
 .section3-1-h2,
 .section3 .section3-2 .section3-2-left p,
-.section3 .section3-2 .section3-3-right p,
+.section3 .section3-3 .section3-3-right p,
 .section3 .section3-4 .section3-4-left p,
-.section3 .section3-2 .section3-2-left img,
 .section3 .section3-2 .section3-2-right img,
 .section3 .section3-3 .section3-3-left img,
-.section3 .section3-4 .section3-4-left img,
 .section3 .section3-4 .section3-4-right img  {
     opacity: 0;
     transform: translateY(50px);
@@ -113,12 +111,10 @@
 .section3-1-h1.opacity-visible,
 .section3-1-h2.opacity-visible,
 .section3 .section3-2 .section3-2-left p.opacity-visible,
-.section3 .section3-2 .section3-3-right p.opacity-visible,
+.section3 .section3-3 .section3-3-right p.opacity-visible,
 .section3 .section3-4 .section3-4-left p.opacity-visible,
-.section3 .section3-2 .section3-2-left img.opacity-visible,
 .section3 .section3-2 .section3-2-right img.opacity-visible,
 .section3 .section3-3 .section3-3-left img.opacity-visible,
-.section3 .section3-4 .section3-4-left img.opacity-visible,
 .section3 .section3-4 .section3-4-right img.opacity-visible {
     opacity: 1;
     transform: translateY(0); /* 원래 위치로 돌아오는 위치 설정 */
