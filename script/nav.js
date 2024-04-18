@@ -75,10 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let section3Visible = false;
 
     window.addEventListener('scroll', () => {
-        const section3Top = section3.getBoundingClientRect().top * 6;
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition >= section3Top && !section3Visible) {
+        if (scrollPosition >= 2800 && !section3Visible) {
             section3Visible = true;
 
             setTimeout(() => {
