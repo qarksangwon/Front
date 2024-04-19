@@ -57,16 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
             setTimeout(() => {
                 img1.classList.add('opacity-visible');
-            }, 1000);
+            }, 700);
             setTimeout(() => {
                 paragraph.classList.add('opacity-visible');
-            }, 1500);
+            }, 1200);
         }
     });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const section3 = document.querySelector('.section3');
     const title1 = document.querySelector('.section3-1-h1');
     const title2 = document.querySelector('.section3-1-h2');
     const pElements = document.querySelectorAll('.section3 .section3-2 .section3-2-left p, .section3 .section3-3 .section3-3-right p, .section3 .section3-4 .section3-4-left p');
@@ -96,6 +95,68 @@ document.addEventListener('DOMContentLoaded', () => {
                     img.classList.add('opacity-visible');
                 });
             }, 1500);
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const h1 = document.querySelector('.section4-left-h1');
+    const h2 = document.querySelector('.section4-left-h2');
+    const span1 = document.querySelector('.section4-left-span1');
+    const span2 = document.querySelectorAll('.section4-left-span2,.section4-left-span2-2');
+    const span3 = document.querySelectorAll('.section4-left-span3,.section4-left-span3-3');
+    const pcontent = document.querySelector('.section4-left-p');
+    const phone = document.querySelector('.section4-phone');
+    const images = document.querySelectorAll('.section4-right-1,.section4-right-2,.section4-right-3');
+
+    let section4Visible = false;
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 5000 && !section4Visible) {
+            section4Visible = true;
+        
+            setTimeout(() => {
+                h1.classList.add('opacity-visible');
+                h2.classList.add('opacity-visible');
+            }, 200);
+            setTimeout(() => {
+                phone.classList.add('opacity-visible');
+            }, 600);
+            setTimeout(()=>{
+                images[0].style.animation = 'showImage1 7s infinite';
+                images[1].style.animation = 'showImage2 7s infinite';
+                images[2].style.animation = 'showImage3 7s infinite';
+                setTimeout(() => {
+                    images[0].classList.add('show-image');
+                }, 500);
+                setTimeout(() => {
+                    images[1].classList.add('show-image');
+                }, 2000);
+                setTimeout(() => {
+                    images[2].classList.add('show-image');
+                }, 3500);
+            },800);
+            setTimeout(() => {
+                pcontent.classList.add('opacity-visible');
+            }, 1200);
+
+            setTimeout(() => {
+                span1.classList.add('opacity-visible');
+            }, 2000);
+
+            setTimeout(() => {
+                span2.forEach((s2) => {
+                    s2.classList.add('opacity-visible');
+                });
+            }, 2700);
+            setTimeout(() => {
+                span3.forEach((s3) => {
+                    s3.classList.add('opacity-visible');
+                });
+            }, 3400);
+            
         }
     });
 });
