@@ -160,3 +160,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const h1 = document.querySelector('.section5-h1');
+    const h2 = document.querySelector('.section5-h2');
+    const bottomDivs = document.querySelectorAll('.section5-bottom > div');
+
+    let section5Visible = false;
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 6300 && !section5Visible) {
+            section5Visible = true;
+        
+            setTimeout(() => {
+                h1.classList.add('opacity-visible');
+                h2.classList.add('opacity-visible');
+            }, 400);
+
+            setTimeout(() => {
+                bottomDivs.forEach((div) => {
+                    div.classList.add('opacity-visible');
+                });
+            }, 900);
+        }
+    });
+});
