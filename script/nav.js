@@ -254,3 +254,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
     });
 });
+
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const section7Left = document.querySelector('.section7-left');
+    const section7Right = document.querySelector('.section7-right');
+
+    const relativeScrollPosition = Math.max(0, scrollPosition - 9000); 
+    const translateValue = (relativeScrollPosition / window.innerHeight) * 100;
+    
+    section7Left.style.transform = `translate3d(-${translateValue}%, 0px, 0px)`;
+    section7Right.style.transform = `translate3d(${translateValue}%, 0px, 0px)`;
+});
