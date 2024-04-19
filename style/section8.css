@@ -2,7 +2,7 @@
 .section8-container{
     max-width: 1160px;
     width: 95%;
-    height: 3900px;
+    height: auto;
     padding-top: 150px;
     margin: 0px auto;
     margin-top: 800px;
@@ -53,14 +53,15 @@
 }
 .section8-top-content{
     color: #333D48;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     padding-left: 40px;
     margin: 0;
 }
 .section8-top-img{
-    width: 740px;
-    height: 807px;
+    max-width: 740px;
+    width: 80vw;
+    height: auto;
     margin: 0px auto;
 }
 
