@@ -187,3 +187,70 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pbottom = document.querySelector('.section6-bottom');
+    const section6p1 = document.querySelector('.section6-p1');
+    const section6p2 = document.querySelector('.section6-p2');
+
+    let section6Visible = false;
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 8200 && !section6Visible) {
+            section6Visible = true;
+        
+            setTimeout(() => {
+                section6p1.classList.add('opacity-visible');
+            }, 500);
+
+            setTimeout(() => {
+                section6p2.classList.add('opacity-visible');
+            }, 1300);
+
+            setTimeout(() => {
+                pbottom.classList.add('opacity-visible');
+            }, 2100);
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sec6img1 = document.querySelector('.section6-1');
+    const sec6img2 = document.querySelector('.section6-2');
+    const sec6img3 = document.querySelector('.section6-3');
+    const sec6img5 = document.querySelector('.section6-5');
+    const sec6img6 = document.querySelector('.section6-6');
+    const sec6img7 = document.querySelector('.section6-7');
+
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        if(scrollPosition < 8600){
+            sec6img3.classList.remove('opacity-visible');
+            sec6img5.classList.remove('opacity-visible');
+            
+        }
+        if (scrollPosition >= 8600 ) {
+            sec6img3.classList.add('opacity-visible');
+            sec6img5.classList.add('opacity-visible');
+        }
+        if(scrollPosition <8700){
+            sec6img2.classList.remove('opacity-visible');
+            sec6img6.classList.remove('opacity-visible');
+        }
+        if(scrollPosition >= 8700){
+            sec6img2.classList.add('opacity-visible');
+            sec6img6.classList.add('opacity-visible');
+        }
+        if(scrollPosition <8800){
+            sec6img1.classList.remove('opacity-visible');
+            sec6img7.classList.remove('opacity-visible');
+        }
+        if(scrollPosition >= 8800){
+            sec6img1.classList.add('opacity-visible');
+            sec6img7.classList.add('opacity-visible');
+        }
+        
+    });
+});
