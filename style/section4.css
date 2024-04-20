@@ -14,6 +14,7 @@
 }
 .section4-content-left{
     padding-left: 80px;
+    min-width: auto;
 }
 .section4-left{
     width: 366px;

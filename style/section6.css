@@ -60,7 +60,7 @@
 }
 .section6-img-list > img{
     position: relative;
-    right: 400px;
+    right: 360px;
     top: 640px;
     width: 178px;
     height: 178px;
@@ -70,6 +70,7 @@
 .section6-p{
     display: flex;
     max-width: 900px;
+    width: 90%;
     height: 104px;
     position: relative;  
     top: -600px;  

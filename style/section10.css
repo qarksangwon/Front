@@ -76,3 +76,7 @@
     padding: 11px 16px;
     border-radius: 6px;
 }
+.section10-bottom > div > a:hover {
+    background-color: #255ca9;
+    transition: all 0.1s ease-in;
+}
