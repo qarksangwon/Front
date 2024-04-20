@@ -206,4 +206,8 @@
     .nav-mobile{
         display: none;
     }
+    .category{
+        display: flex !important;
+        opacity: 1;
+    }
 }
