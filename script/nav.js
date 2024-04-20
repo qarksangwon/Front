@@ -1,10 +1,10 @@
-// 새로고침 시 맨위 로딩, 맨 마지막에 넣을거임
-// window.onload = function() {
-//     window.scrollTo(0, 0);
-// };
-// window.addEventListener('beforeunload', function() {
-//     window.scrollTo(0, 0);
-// });
+// 새로고침 시 맨위 로딩
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+});
 
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
@@ -265,4 +265,31 @@ window.addEventListener('scroll', function() {
     
     section7Left.style.transform = `translate3d(-${translateValue}%, 0px, 0px)`;
     section7Right.style.transform = `translate3d(${translateValue}%, 0px, 0px)`;
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerButton = document.querySelector('.hamburger');
+    const svgIcon1 = document.querySelector('.nav-svgIcon1');
+    const svgIcon2 = document.querySelector('.nav-svgIcon2');
+    const category = document.querySelector('.category');
+
+    // hamburgerButton을 클릭했을 때 
+    hamburgerButton.addEventListener('click', function() {
+        //버튼이 클릭되었을 때 실행될 코드
+        if(svgIcon1.style.opacity == '0'){
+            svgIcon1.style.opacity = '1';
+            svgIcon2.style.opacity = '0';
+            category.classList.remove('opacity-visible');
+            setTimeout(() => {
+                category.style.display = 'none';
+            }, 200);
+        }else{
+            svgIcon1.style.opacity = '0';
+            svgIcon2.style.opacity = '1';
+            category.style.display = 'flex';
+            setTimeout(() => {
+                category.classList.add('opacity-visible');
+            }, 100);
+        }
+    });
 });

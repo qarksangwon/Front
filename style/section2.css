@@ -86,9 +86,9 @@
 
 }
 .section2-p{
-    width: 300px;
+    width: 80%;
     height: 104px;
-    min-width: 500px;
+    max-width: 500px;
     position: absolute;
     padding-right: 300px;
     top: 640px;
@@ -100,26 +100,6 @@
     opacity: 0;
 }
 
-@media (max-width: 1450px) { 
-    .section2-p {
-        padding-right: 100px; 
-    }
-}
-@media (max-width: 1200px){
-    .section2-p{
-        padding-right: 80px;
-    }
-}
-@media (max-width: 1000px){
-    .section2-p{
-        padding-right: 40px;
-    }
-}
-@media (max-width: 800px){
-    .section2-p{
-        padding-right: 10px;
-    }
-}
 .section2-title-h1,
 .section2-title-h2,
 .section2-img1,
@@ -137,4 +117,47 @@
 .section2-p.opacity-visible {
     opacity: 1;
     transform: translateY(0); /* 원래 위치로 돌아오는 위치 설정 */
+}
+
+@media (max-width: 1450px) { 
+    .section2-p {
+        padding-right: 100px; 
+    }
+}
+@media (max-width: 800px){
+    .section2-p {
+        font-size: 16px;
+    }
+    .section2-title-h1{
+        font-size: 18px;
+    }
+    .section2-title-h2{
+        font-size: 26px;
+    }
+    .section4-phone{
+        width: 500px;
+        height: auto;
+    }
+    .section4-right > .section4-right-1,
+    .section4-right > .section4-right-2,
+    .section4-right > .section4-right-3{
+        width: 280px;
+        height: auto;
+    }
+    .section2-img1 > .phone{
+        width: 500px;
+        height: auto;
+    }
+    .section2_1_home {
+        width: 280px;
+        height: auto;
+    }
+    .section2-img2 > .phone{
+        width: 500px;
+        height: auto;
+    }
+    .section2_2_home{
+        width: 280px;
+        height: auto;
+    }
 }

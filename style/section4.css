@@ -6,7 +6,8 @@
     align-items: center;
 }
 .section4-content{
-    width: 1140px;
+    max-width: 1140px;
+    width: 95%;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -155,5 +156,32 @@
     }
     68%, 100% {
         opacity: 1; /* 이미지 3을 1.5초 동안 보여줍니다. */
+    }
+}
+
+@media (max-width: 600px) {
+    .section4-left-h1{
+        font-size: 18px;
+    }
+    .section4-left-h2{
+        font-size: 26px;
+    }
+    .section4-left-span1,
+    .section4-left-span2,
+    .section4-left-span3{
+        font-size: 34px;
+    }
+    .section4-left-p{
+        font-size: 18px;
+    }
+    .section4-phone{
+        width: 500px;
+        height: auto;
+    }
+    .section4-right > .section4-right-1,
+    .section4-right > .section4-right-2,
+    .section4-right > .section4-right-3{
+        width: 280px;
+        height: auto;
     }
 }

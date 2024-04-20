@@ -28,3 +28,19 @@
     transform: translate3d(0%, 0px, 0px);
     transition: transform 0.3s ease-in-out; /* transform 변경 시 부드러운 전환 효과 */
 }
+
+@media (max-width: 1050px) {
+    .section7-span{
+        font-size: 60px;
+    }
+}
+@media (max-width: 630px) {
+    .section7-span{
+        font-size: 40px;
+    }
+}
+@media (max-width: 350px) {
+    .section7-span{
+        font-size: 25px;
+    }
+}

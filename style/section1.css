@@ -126,10 +126,28 @@
     width: 100vw;
     height: 660px;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: rgb(249, 250, 251);
     font-size: 32px;
     font-weight: bold;
+}
+.toss-info > p{
+    max-width: 1000px;
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+@media (max-width: 640px) { 
+    .main-content > h1 {
+        font-size: 30px;
+    }
+    .toss-info > p{
+        width: 252px;
+        font-size: 20px;
+        font-weight: 600;
+    }
 }

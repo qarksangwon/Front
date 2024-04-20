@@ -121,3 +121,44 @@
 .section6-7.opacity-visible {
     opacity: 1;
 }
+
+@media (max-width: 490px) {
+    .section6-h1{
+        font-size: 20px;
+    }
+    .section6-h2{
+        font-size: 35px;
+    }
+    .section6-bottom > p,
+    .section6-p1,
+    .section6-p2{
+        font-size: 18px;
+    }
+    .section6-phone{
+        width: 400px;
+        height: auto;
+    }
+    .section6-img{
+        width: 220px;
+        height: auto;
+    }
+    .section6-img-list > img{
+        position: relative;
+        right: 130px;
+        top: 590px;
+        width: 110px;
+        height: 110px;
+        margin-left: 10px;
+    } 
+}
+
+@media (max-width: 305px) {
+    .section6-bottom > p
+    .section6-p1,
+    .section6-p2{
+        font-size: 14px;
+    }
+    .section6-h2{
+        font-size: 25px;
+    }
+}
