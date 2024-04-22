@@ -6,7 +6,8 @@
     
 }
 .navbar{
-    width: 100%;
+    width: 100vw;
+    height: auto;
     position: fixed;
     z-index: 100;
 }
@@ -17,6 +18,9 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    margin: 0px auto;
 }
 
 .logo_container > a{
@@ -26,7 +30,8 @@
     text-decoration: none;
 }
 .category{
-    margin-right: 30px;
+    width: auto;
+    margin-right: auto;
 }
 .category > ul{
     position: relative;
@@ -127,7 +132,7 @@
         position: relative;
     }
     .navbar{
-        width: 100%;
+        width: 100vw;
         height: 58px;
     }
     .logo_container{
