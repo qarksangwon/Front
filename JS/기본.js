@@ -28,7 +28,7 @@ var z = 30;
 
 
 // 데이터 타입 : 내부적으로 존재
-// 원시-> 자바의 값타입이랑 비슷 -> 할당받은 공간에 대입
+// 원시 타입-> 자바의 값타입이랑 비슷 -> 할당받은 공간에 대입
 // 숫자, 문자열, 논리값, 특수(undefined, null), 심벌
 
 let str = "안녕하세요" + "자바스크립트" + `배워봅시다.`;
@@ -44,11 +44,60 @@ let num2 = 0.1;
 console.log(num1 * num2, num1+num2);
 console.log(0.1 + 0.2); 
 // 0.300000004 -> 실수 계산할 때 부동 소수점 방식으로 표현해서 값이 정확하게 안나온다.
-
 // toString() : 숫자 -> 문자
 
 
-
-
-
 // 논리형 : true, false
+
+
+// 객체 타입-> 기본 자료형(원시 타입) 을 제외한 모든 자료형
+// 배열
+let score = [80,99,true,"아이브",[100,99,98]]
+// 자바와 다르게 모든 자료형 저장 가능
+// JS도 문자열도 배열
+console.log(score[3][1]);
+
+
+// 객체 리터럴(오브젝트) : java의 map, python의 dictionary와 유사
+let score2 = {
+    kor : 80,
+    eng : 90,
+    mat : 56,
+    scn : 99,
+};
+console.log(score2.eng);
+
+//typeof()
+//배열에서 toString() 사용 시 모든 문자를 (,)로 결합해 출력
+
+// 비교 연산자에서 연산자가 3개인건 자료형까지 함께 비교
+// 이게 왜 있나 ? 
+// JS에선 let a = 1 이 있고 let b = "1" 이있을 때 비교하면
+// 타입이 달라서 다른 값이어야하는데 a == b 를 하게되면 자동 형변환 때문에 같다고 한다.
+console.log(1 == "1");
+
+
+// 형변환 
+// 묵시적 -> 숫자형 데이터와 문자열 데이터를 연결 연산자로 처리하면 문자열로 묵시적 형 변환
+console.log(10 + "10");
+
+// 명시적 ->  const num = 10;
+// const str = String(num);
+
+
+// 조건문은 if switch case 3항 연산자
+
+// 반복문은 while, do-while, for, for-in, for-of
+
+// for-in은 객체 리터럴의 프로퍼티를 열거하는데 사용. 
+let person = { fname : "John", lname: "Doe", age : 25}
+for ( let key in person){
+    console.log(`key[${key}] value[${person[key]}]`);
+}
+
+// for-of 는 ES6에서 추가된 자바스크립트 반복분 중 하나.
+// 루프를 사용하면 배열이나 이터러블 객체(iterable object)의 요소를 순회할 수 있다.
+let brands = ["애플", "구글", "페이스북", "아마존", "삼성전자"]
+for (let brand of brands){
+    console.log(brand);
+}
