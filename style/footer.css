@@ -9,7 +9,7 @@
 
 .footer-content{
     max-width: 940px;
-    width: 100%;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-flow: column;
@@ -37,7 +37,7 @@
 .footer-item1{
     display: flex;
     max-width: 1000px;
-    width: 95%;
+    width: 95vw;
     padding-bottom: 50px;
     flex-wrap: wrap;
     position: relative;
@@ -60,7 +60,7 @@
 /* 두 번째 item */
 .footer-item2{
     max-width: 850px;
-    width: 90%;
+    width: 90vw;
 }
 .footer-item2 > address > strong {
     color: #B0B8C1;

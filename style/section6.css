@@ -70,7 +70,7 @@
 .section6-p{
     display: flex;
     max-width: 900px;
-    width: 90%;
+    width: 90vw;
     height: 104px;
     position: relative;  
     top: -600px;  

@@ -164,7 +164,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
-        width: 100%;
+        width: 100vw;
         height: auto;
         background-color: white;
     }
@@ -172,7 +172,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
-        width: 100%;
+        width: 100vw;
         max-width: 100vw;
         padding-left: 70px;
         height: auto;
@@ -180,7 +180,7 @@
     }
     .category > ul > div {
         display: flex;
-        width: 100%;
+        width: 100vw;
         max-width: 100vw;
         padding: 10px 0px 10px 45px;
         height: auto;

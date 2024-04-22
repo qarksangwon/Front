@@ -1,7 +1,7 @@
 
 .section8-container{
     max-width: 1160px;
-    width: 95%;
+    width: 95vw;
     height: auto;
     padding-top: 150px;
     margin: 0px auto;
@@ -19,7 +19,7 @@
 }
 .section8-top{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 1032px;
     display: flex;
     position: relative;
@@ -81,22 +81,22 @@
 }
 .section8-middle-left-img{
     max-width: 672px;
-    width: 90%; 
+    width: 90vw; 
     height: auto;
     margin-right: 40px;
 }
 .section8-middle-left{
-    width: 60%;
+    width: 60vw;
 
 }
 .section8-middle-right{
     position: relative;
     top: 120px;
-    width: 40%;
+    width: 40vw;
 }
 .section8-middle-right-img{
     max-width: 336px;
-    width: 80%;
+    width: 80vw;
     height: auto;
 }
 .section8-middle-right-content{
@@ -118,20 +118,20 @@
 
 .section8-bottom-img{
     max-width: 1048px;
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
 .section8-bottom-content{
     display: flex;
-    width: 90%;
+    width: 90vw;
 }
 .section8-bottom-content-left,
 .section8-bottom-content-right {
-    width: 50%; /* % 단위로 수정 */
-    max-width: 50%; /* 반응형으로 수정 */
+    width: 50vw; /* % 단위로 수정 */
+    max-width: 50vw; /* 반응형으로 수정 */
     box-sizing: border-box; /* padding과 border 포함한 크기 지정 */
-    padding: 0 2%; /* 반응형으로 수정 */
+    padding: 0 2vw; /* 반응형으로 수정 */
 }
 
 .section8-bottom-content-right {

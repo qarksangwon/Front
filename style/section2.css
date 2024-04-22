@@ -6,7 +6,8 @@
 }
 .section2-title{
     height: 276px;
-    width: 1200px;
+    max-width: 1200px;
+    width: auto;
     margin: 0px auto;
     padding: 0 60px;
     position: relative;
@@ -86,7 +87,7 @@
 
 }
 .section2-p{
-    width: 80%;
+    width: 80vw;
     height: 104px;
     max-width: 500px;
     position: absolute;
