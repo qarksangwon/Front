@@ -1,6 +1,13 @@
 // JS는 data type을 지정하지 않고 값이 대입될 때 결정되는 동적 데이터 타입 언어
 // 변수와 상수는 var과 const, let
 // 변수 - 값 여러번 대입 가능 -> lead, write -> let, var
+// let의 특이점
+// let greeting = "say Hi";
+// if (true) {
+//     let greeting = "say Hello instead";
+//     console.log(greeting); // "say Hello instead"
+// }
+// console.log(greeting); // "say Hi"
 
 let x = 10;
 x = 20;
@@ -10,6 +17,10 @@ console.log("x의 값은 : ", x);
 // 원래라면 나야 할 오류가 undefined로 출력이 나오게 됨
 // js의 호이스팅 때문이라고 한다.
 // 변수 및 함수의 선언이 스코프의 최상단으로 끌어올려지는 것을 얘기한다.
+// var, let, const 모두 호이스팅이 일어나지만, 
+// var과는 (let,const)이 스코프가 다른것
+// var은 functionScope라고 하고 let과 const는 blockScope라서
+// var -> undefined로 오류가 나고 let/const -> ReferenceError가 난다고 함.
 
 console.log("y의 값은 : " , y);
 var y = 20;
