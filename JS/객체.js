@@ -12,3 +12,18 @@ const person = {
 
 console.log(person['name']);
 person.printInfo();
+
+// 객체 생성
+// 생성자로 객체 생성 - 효율적으로 객체들을 생성하기 위한 방법.
+function protoPerson(name, age){
+    this.name = name;
+    this.age = age;
+    this.sayHello = () => {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+let person1 = new protoPerson('John', 30);
+let person2 = new protoPerson('Jane', 35);
+person1.sayHello();
+person2.sayHello();
