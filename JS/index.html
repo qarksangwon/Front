@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: url("./image/ham2.png");
+        .circle{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background-color: rgb(209, 240, 251);
         }
-        h1{
-            color: yellowgreen;
-        }
-        h2{
+        .result{
             color: crimson;
-        }
-        .min{
-            color: blue;
+            font-size: larger;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <script src="./상근날드.js"></script>
+    <div class="circle">
+        <h3>학원 수료</h3>
+        <div><span class="result" id="result">123</span><span>일 남았습니다. 힘내세요!!!</span></div>
+        <p>화이팅!</p>
+    </div>
+    <script src="./표준내장객체(Date).js"></script>
 </body>
 </html>
