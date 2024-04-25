@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <p>text-1</p>
+    <p>text-2</p>
+    <p>text-3</p>
+    <script>
+      const pEls = document.querySelectorAll("p");
+      pEls.forEach((el) => {
+        el.addEventListener(//"click", function(){
+        //   if(this.style.color === 'red') {
+        //     this.style.color = 'black';
+        //   } else {
+        //     this.style.color = 'red';
+        //   }
+        // 화살표 함수 사용 시 this로 접근 못하고 각 객체 el로 접근해야 한다.
+        "click", () => {
+            if (el.style.color === 'red') {
+            el.style.color = 'black';
+            } else {
+            el.style.color = 'red';
+            }
+        });
+      });
+    </script>
+</body>
+</html>
