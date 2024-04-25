@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .green, .orange, .purple
+        ,.green2, .orange2, .purple2{
+            margin: 0px auto;
+            width: 200px;
+            height: 30px;
+            color: white;
+            border: 1px solid lightgray;
+        }
+        .green,
+        .green2{
+            background-color: green;
+        }
+        .orange,
+        .orange2{
+            background-color: orange;
+        }
+        .purple,
+        .purple2{
+            background-color: purple;
+        }
+        .box,
+        .box2{
+            width: 610px;
+            height: 400px;
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            background-color: orange;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box-group">
+        <div class="buttonGroup">
+            <button class="green" onclick="changeGreen()">Green</button>
+            <button class="orange" onclick="changeOrange()">Orange</button>
+            <button class="purple" onclick="changePurple()">Purple</button>
+        </div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <div class="box-group">
+        <div class="buttonGroup2">
+            <button class="green2">Green</button>
+            <button class="orange2">Orange</button>
+            <button class="purple2">Purple</button>
+        </div>
+        <div class="box2"></div>
+    </div>
+    <script>
+        const changeBox = document.querySelector(".box");
+        const changeBox2 = document.querySelector(".box2");
+        function changeGreen(){
+            changeBox.style.backgroundColor = "green";
+        }
+        function changeOrange(){
+            changeBox.style.backgroundColor = "orange";
+        }
+        function changePurple(){
+            changeBox.style.backgroundColor = "purple";
+        }
+        const btnGreen = document.querySelector(".green2");
+        const btnOrange = document.querySelector(".orange2");
+        const btnPurple = document.querySelector(".purple2");
+        btnGreen.addEventListener("click",function(){
+            changeBox2.style.backgroundColor = "green";
+        })
+        btnOrange.addEventListener("click",function(){
+            changeBox2.style.backgroundColor = "orange";
+        })
+        btnPurple.addEventListener("click",function(){
+            changeBox2.style.backgroundColor = "purple";
+        })
+    </script>
+</body>
+</html>
