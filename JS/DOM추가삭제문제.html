@@ -47,7 +47,7 @@
             })
             //  appendText.setAttribute("onclick","this.remove();");
             let newClass = document.querySelector(".newClass");
-            newClass.appendChild(appendText);
+            newClass.insertBefore(appendText, newClass.firstChild); // 맨 앞에 추가
         }
     </script>
 </body>
