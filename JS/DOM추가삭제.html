@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            background-color: orangered;
+            margin: 10px auto;
+        }
+        ul, li{
+            list-style: none;
+            background-color: blue;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">메뉴</div>
+    <script>
+        let menuList = document.createElement("ul");
+        let menuItem1 = document.createElement("li");
+        let menuItem2 = document.createElement("li");
+        let menuItem3 = document.createElement("li");
+        let menuItem4 = document.createElement("li");
+        menuItem1.innerText = "돈까스";
+        menuItem2.innerText = "오므라이스";
+        menuItem3.innerText = "짜장면";
+        menuItem4.innerText = "짬뽕";
+        menuList.appendChild(menuItem1);
+        menuList.appendChild(menuItem2);
+        menuList.appendChild(menuItem3);
+        menuList.appendChild(menuItem4);
+        let menuEl = document.querySelector("#menu");
+        menu.appendChild(menuList);
+    </script>
+</body>
+</html>

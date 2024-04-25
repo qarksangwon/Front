@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: bold;
+        }
+        input[type = "text"]{
+            width: 300px;
+            height: 20px;
+        }
+        button{
+            width: 70px;
+            height: 26px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+        .newClass > p{
+            width: 300px;
+            padding-left: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>DOM 추가/삭제</h1>
+        <p>공부할 과목을 기록해 보세요.</p>
+        <p>공부가 끝난 과목은 클릭해서 삭제할 수 있습니다.</p>
+        <input type="text" class="inputClass"><button onclick="append()" >추가</button>
+        <div class="newClass">
+
+        </div>
+    </div>
+    <script>
+        function append(){
+            let inputText = document.querySelector(".inputClass");
+            let appendText = document.createElement("p");
+            appendText.innerHTML = inputText.value;
+            appendText.addEventListener("click",function(){
+                this.remove();
+            })
+            //  appendText.setAttribute("onclick","this.remove();");
+            let newClass = document.querySelector(".newClass");
+            newClass.appendChild(appendText);
+        }
+    </script>
+</body>
+</html>
