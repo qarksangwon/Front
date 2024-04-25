@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 인라인 -->
+    <button onclick="clickEvent()">클릭</button>
+    <!-- 프로퍼티 리스너  -->
+    <button class="property"> 클릭 </button>
+    <!-- 이벤트 등록 리스너 -->
+    <button class="event">클릭</button>
+    <script>
+        //인라인
+        function clickEvent(){
+          alert("인라인");
+        }
+        // 프로퍼티 리스너
+        const btnEl = document.querySelector(".property");
+        btnEl.onclick = () => { alert("프로퍼티 리스너");}
+        // 이벤트 등록
+        const btnEl2 = document.querySelector(".event");
+        btnEl2.addEventListener("click",function(){
+            alert("이벤트 등록 리스너");
+        })
+      </script>
+</body>
+
+</html>
