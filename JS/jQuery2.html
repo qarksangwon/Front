@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="colorButton">Change Background Color</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let colors = ["red", "orange", "yellow", "green", "blue", "navy", "purple"];
+            var colorIndex = 0;
+            const $divBgc = $(".container");
+            $("#colorButton").click(function() {
+                $divBgc.css("background-color", colors[colorIndex]);
+                colorIndex = (colorIndex+1) % colors.length;
+            });
+        });
+    </script>
+</body>
+</html>
