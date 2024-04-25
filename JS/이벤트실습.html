@@ -41,9 +41,9 @@
 <body>
     <div class="box-group">
         <div class="buttonGroup">
-            <button class="green" onclick="changeGreen()">Green</button>
-            <button class="orange" onclick="changeOrange()">Orange</button>
-            <button class="purple" onclick="changePurple()">Purple</button>
+            <button class="green" onclick="changeBg('green')">Green</button>
+            <button class="orange" onclick="changeBg('orange')">Orange</button>
+            <button class="purple" onclick="changeBg('purple')">Purple</button>
         </div>
         <div class="box"></div>
     </div>
@@ -59,14 +59,8 @@
     <script>
         const changeBox = document.querySelector(".box");
         const changeBox2 = document.querySelector(".box2");
-        function changeGreen(){
-            changeBox.style.backgroundColor = "green";
-        }
-        function changeOrange(){
-            changeBox.style.backgroundColor = "orange";
-        }
-        function changePurple(){
-            changeBox.style.backgroundColor = "purple";
+        function changeBg(color){
+            changeBox.style.backgroundColor = color;
         }
         const btnGreen = document.querySelector(".green2");
         const btnOrange = document.querySelector(".orange2");
