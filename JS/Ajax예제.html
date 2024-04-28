@@ -23,8 +23,8 @@
         <tbody class="table_body">
 
         </tbody>
-        <button type="button" onclick="getJSON()"> json 불러오는 버튼</button>
     </table>
+    <button type="button" onclick="getJSON()"> json 불러오는 버튼</button>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
                 function getJSON() {
@@ -37,14 +37,15 @@
                     console.log(data);
                     str = '<tr>'; 
                         $.each(data , function(i){
-                            str += '<td>' + data[i].no + '</td>'
-                                    '<td>' + data[i].name + '</td>'
-                                    '<td>' + data[i].tel + '</td>'
-                                    '<td>' + data[i].addr + '</td>'
-                                    '<td>' + data[i].status + '</td>'
-                                    '<td>' + data[i].comment + '</td>'
+                            str +=  '<tr>'+
+                                    '<td>' + data[i].no + '</td>'+
+                                    '<td>' + data[i].name + '</td>'+
+                                    '<td>' + data[i].tel + '</td>'+
+                                    '<td>' + data[i].addr + '</td>'+
+                                    '<td>' + data[i].status + '</td>'+
+                                    '<td>' + data[i].comment + '</td>'+
                                     '<td>' + data[i].date + '</td>'
-                            str += '<tr>';
+                            str += '</tr>';
                         });
                     $('.table_body').append(str);
                 },
