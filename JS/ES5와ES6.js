@@ -18,11 +18,27 @@ const even = numbers.filter(e => e % 2 === 0);
 console.log(even);
 
 //reduce ->  누적 값으로 결과 값 하나 만듬
-const sum = numbers.reduce((total, e) => total + e , 0);
+const sum1 = numbers.reduce((total, e) => total + e , 0);
 // 첫 번째 매개변수는 계속해서 누적해서 쓸 매개변수, 
 // 두 번째 매개변수는 순회 할 매개변수
 // 즉 앞에서부터 매개변수에 배열의 값을 차례대로 넣는데,
 // 함수 내부의 내용을 실행시켜 나온 값을 첫 번째 매개변수에 넣고,
 // 그 다음 배열의 값을 두번 째 매개변수에 넣음.
-console.log(sum);
+console.log(sum1);
 
+//ES6
+//화살표 함수
+const add = (x, y) => x + y;
+
+//백틱
+const name = 'John';
+const message = `Hello, ${name}!
+How are you today?`;
+console.log(message);
+
+//전개 연산자
+function sum(...numbers) {
+    return numbers.reduce((acc, cur) => acc + cur, 0);
+  }
+  
+console.log(sum(1, 2, 3, 4, 5)); // 15
