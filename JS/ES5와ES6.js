@@ -48,3 +48,15 @@ function sum(...numbers) {
   }
   
 console.log(sum(1, 2, 3, 4, 5)); // 15
+// 전개 연산자 활용
+const member = {
+    name : "박상원",
+    age : "25",
+    addr : "서울시 강남구 역삼동"
+}
+
+// member.addr = "경기도 안산시"; 같은 주소의 내부 값이 바뀌어 버렸음. 
+// 불변성의 원칙을 지키지 못함 -> 리액트가 변경점을 못알아먹음
+const member2 = {...member, addr : "경기도 안산시"};
+console.log(member);
+console.log(member2);
