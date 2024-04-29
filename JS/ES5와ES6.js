@@ -37,6 +37,12 @@ How are you today?`;
 console.log(message);
 
 //전개 연산자
+const obj1 = { x: 1, y: 2 };
+const obj2 = { z: 3, w: 4 };
+const obj3 = { ...obj1, ...obj2 };
+console.log(obj3['x']);
+console.log(obj3.x);
+
 function sum(...numbers) {
     return numbers.reduce((acc, cur) => acc + cur, 0);
   }
